@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YoutubeActivity" >
+
+     <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="0"
+        android:background="#222222" >
+
+        <ImageView
+            android:id="@+id/imageButton1"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/logo" 
+            android:onClick="NavigateMain"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:text="Winshuttle LLC"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="40dp"
+            android:text="SAP Made Easy"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textStyle="italic" />
+    </FrameLayout>
+    
+   <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/frameLayout1"
+        android:background="#222222"
+        android:text="YouTube"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:background="#222222"
+        android:text="About"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button01"
+        android:layout_alignBottom="@+id/Button01"
+        android:layout_alignParentRight="true"
+        android:background="#222222"
+        android:text="Contact"
+        android:textColor="#ffffff" />
+     
+     <GridView
+        android:id="@+id/bf_video_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:numColumns="1" >
+    </GridView>
+    
+</RelativeLayout>
+
+
